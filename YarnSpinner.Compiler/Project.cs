@@ -38,7 +38,6 @@ namespace Yarn.Compiler
         /// cref="CurrentProjectFileVersion"/>.
         /// </remarks>
         [JsonPropertyName("projectFileVersion")]
-        [JsonRequired]
         public int FileVersion { get; set; } = 2;
 
         /// <summary>
@@ -87,7 +86,6 @@ namespace Yarn.Compiler
         /// The base language is the language that the Yarn scripts is written
         /// in.
         /// </remarks>
-        [JsonRequired]
         public string BaseLanguage { get; set; } = CurrentNeutralCulture.Name;
 
         /// <summary>
